@@ -71,7 +71,7 @@ function placeInTable(y, x) {
 
 function endGame(msg) {
   alert(msg);
-}
+}//this pops up when the game is over
 
 
 function handleClick(evt) {
@@ -92,7 +92,7 @@ function handleClick(evt) {
   
   if (board.every(row => row.every(cell => cell))) {
     return endGame('Tie!');
-  }
+  }//this is really unlikely
     
     currPlayer = currPlayer === 1 ? 2 : 1;
 }//this is how the players take turns
